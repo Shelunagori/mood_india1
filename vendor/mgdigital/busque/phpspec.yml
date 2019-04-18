@@ -1,0 +1,13 @@
+suites:
+    busque:
+        namespace: MGDigital\BusQue
+        psr4_prefix: MGDigital\BusQue
+
+extensions:
+    PhpSpecCodeCoverage\CodeCoverageExtension:
+        format:
+            - clover
+        output:
+            clover: coverage.xml
+
+formatter.name: pretty

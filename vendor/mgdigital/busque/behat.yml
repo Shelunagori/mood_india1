@@ -1,0 +1,10 @@
+default:
+    suites:
+        busque:
+            contexts:
+                - MGDigital\BusQue\Features\Context\PHPRedisContext
+predis:
+    suites:
+        busque:
+            contexts:
+                - MGDigital\BusQue\Features\Context\PredisContext

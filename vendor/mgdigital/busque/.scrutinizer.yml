@@ -1,0 +1,24 @@
+build:
+    environment:
+        php: 7.0.6
+        redis: true
+    tests:
+        override:
+            -
+                command: 'bin/phpspec run'
+                coverage:
+                    file: 'coverage.xml'
+                    format: 'clover'
+checks:
+    php: true
+coding_style:
+    php:
+        spaces:
+            before_parentheses:
+                closure_definition: true
+            within:
+                brackets: true
+filter:
+    excluded_paths:
+        - features/*
+        - spec/*

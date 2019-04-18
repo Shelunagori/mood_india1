@@ -1,0 +1,31 @@
+{
+    "name": "mgdigital/busque",
+    "description": "A flexible, modern command queue and scheduler for PHP7, built on Redis",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MGDigital\\BusQue\\": "src",
+            "MGDigital\\BusQue\\Features\\": "features",
+            "spec\\MGDigital\\BusQue\\": "spec"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "psr/log": "~1.0"
+    },
+    "require-dev": {
+        "behat/behat": "~3.0",
+        "henrikbjorn/phpspec-code-coverage": "^3.0",
+        "league/tactician": "~1.0",
+        "phpspec/phpspec": "~3.0",
+        "phpunit/phpunit": "~5.1",
+        "predis/predis": "~1.0",
+        "squizlabs/php_codesniffer": "~2.6"
+    },
+    "suggest": {
+        "ext-redis": "To use the better PHPRedis driver"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
